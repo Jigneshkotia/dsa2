@@ -50,6 +50,23 @@ void insertAtIdx(node* &tail, node* &head, int d , int idx){
     newnode-> next = newtemp;
 };
 
+void deleteNode(node* &head, int idx){
+    if(idx == 0){
+        node* temp = head;
+        head = head->next;
+        delete temp;
+    }else{
+        node* temp = head;
+        node* prev = NULL;
+
+        for(int i =0 ; i<idx;i++){
+            prev = temp;
+            temp = temp->next;
+        }
+        prev -> next = temp->next;
+    }
+}
+
 void printList(node * head){
     node * temp = head;
     while(temp != NULL){
@@ -78,6 +95,6 @@ int main(){
     insertAtIdx(tail,head,4,0);
     printList(head);
 
-    cout<<"head "<< head->data<<endl;
-    cout<<"tail "<< tail->data<<endl;
+    deleteNode(head,2);
+    printList(head);
 }
