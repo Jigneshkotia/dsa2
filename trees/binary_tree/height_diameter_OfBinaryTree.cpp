@@ -63,8 +63,3 @@ pair<int,int> solveDiameterFast(node* node){
 int diameterFast(node* root){
     return solveDiameterFast(root).first;
 }
-
-int main(){
-    // use the functions here.
-    return 0;
-}

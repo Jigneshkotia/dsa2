@@ -157,6 +157,3 @@ vector<int> verticalOrder(node* root){
     return ans;
 }
 
-int main(){
-    return 0;
-}

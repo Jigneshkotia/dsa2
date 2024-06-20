@@ -44,7 +44,3 @@ bool isBalanced(node* root){
     return checkBalanced(root).first;
 }
 
-int main(){
-    // Use functions here.
-    return 0;
-}

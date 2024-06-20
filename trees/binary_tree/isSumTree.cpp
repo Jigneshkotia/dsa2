@@ -65,7 +65,3 @@ bool isSumTree(node *root)
 }
 
 
-int main(){
-    // use functions here.
-    return 0;
-}

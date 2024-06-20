@@ -38,7 +38,3 @@ bool isIdentical(node* p, node* q){
     }
 }
 
-int main(){
-    // use the functions here.
-    return 0;
-}

@@ -131,7 +131,3 @@ void postOrderTraversal(node * root){
     cout<< root->data<<" ";
 }
 
-int main(){
-    //runs the functions here.
-    return 0;
-}
